@@ -22,6 +22,7 @@ public class Q2 {
             while((line = br.readLine())!=null){
                 System.out.println(line);
             }
+            br.close();
         }catch(IOException e){
             System.out.println("Error reading file.");
         }
@@ -38,9 +39,12 @@ public class Q2 {
                 
                 totalchar += modified.length();
             }
+            br.close();
             System.out.println("Total characters: "+totalchar);
         }catch(IOException e){
             System.out.println("Error reading file.");
         }       
     }
 }
+
+//can use StringTokenizer

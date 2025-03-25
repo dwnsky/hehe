@@ -26,6 +26,7 @@ public class Q23 {
             while((line = br.readLine())!=null){
                 System.out.println(line);
             }
+            br.close();
         }catch(IOException e){
             System.out.println("Error reading file.");
         }
@@ -43,6 +44,7 @@ public class Q23 {
                 totalchar += modified.length();
             }
             System.out.println("Total characters: "+totalchar);
+            br.close();
         }catch(IOException e){
             System.out.println("Error reading file.");
         }       

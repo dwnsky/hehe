@@ -22,6 +22,7 @@ public class Letter {
             while ((line = reader.readLine()) != null){
                 System.out.println(line);
             }
+            reader.close();
         }catch(IOException e){
             System.out.println("File reading error");
         }
@@ -38,7 +39,7 @@ public class Letter {
                     writer.write("\n"+appendLetter);
 
                 }
-
+            writer.close();
 
             System.out.println("Letter appended successfully.");
         }catch(IOException e){
